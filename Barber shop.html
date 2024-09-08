@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/index.html?#media -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber shop</title>
+    <link rel="stylesheet" href="./Barber shop_files/index.css">
+    <link rel="stylesheet" href="./Barber shop_files/index-media-query.css">
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html?">Home</a>
+        <a href="http://127.0.0.1:5500/index.html?#Hairstyles">Hairstyles</a>
+        <a href="http://127.0.0.1:5500/index.html?#Pricing">Pricing</a>
+        <a href="http://127.0.0.1:5500/index.html?#media">Media</a>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Welcome to barber shop</h1>
+        <img src="./Barber shop_files/logo.png">
+    </section>
+
+        <!-- sub hero section -->
+    <section class="sub-hero">    
+        <h2>
+            More than just a haircut, we're your partner in <span>crafting a signature look</span> that reflects your unique personality.
+        </h2>
+        <img src="./Barber shop_files/barbing.png">
+    </section>
+
+    <!-- Hairstyles -->
+    <section id="Hairstyles">
+        <h2>Hairstyles You Need To Try In 2024</h2>
+        <ul>
+            <li>Short Curly Haircut &amp; Low Drop Fade.</li>
+            <li>Short Texture Quiff &amp; Mid Fade.</li>
+            <li>High Temp Fade &amp; Shrot Spiked Wavy Hair.</li>
+            <li>High Fade Mohawk.</li>
+            <li>Classic Short Comb-over.</li>
+            <li>Side Swept Crew Cut.</li>
+            <li>Buzz Cut With Beard.</li>
+            <li>Curly Flat Top.</li>
+        </ul>
+    </section>
+
+    <!-- Pricing -->
+    <section id="Pricing">
+        <h2>Pricing</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adult haircut</td>
+                    <td>#1000</td>
+                </tr>
+                <tr>
+                    <td>Youth haircut</td>
+                    <td>#800</td>
+                </tr>
+                <tr>
+                    <td>Beard</td>
+                    <td>#300</td>
+                </tr>
+                <tr>
+                    <td>Edge trim</td>
+                    <td>#300</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media -->
+    <section id="media">
+        <h2>Have fun while we make you beautiful</h2>
+       <h4>Listen to music</h4>
+       <audio controls="">
+            <source src="./barbering.aac">
+       </audio>
+       <h4>Watch movie</h4>
+       <video controls="">
+            <source src="./Flawless FADE technique - BARBER Tutorial.mp4">
+       </video>
+    </section>
+
+    <!-- About us -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We're not just cutting hair, we're building legacies. Since 2022 we have been a cornerstone of the community, crafting sharp styles and even sharper confidience for generations of men. Our founder, Unclebigbay believe in the power of a great haircut to transform not just one's appearance, but one's outlook. Every snip, shave, and style is by the same passion, ensuring you walk out feeling empowered and ready to conquer the world. We're more than just barbers, we're your confidience, your stylists, your cheerleaders. Come join us, experience the legacy and discover what a truly great haircut can do.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact us</h2>
+        <h3>
+            Don't wait another minute. Walk in for a walk-in or schedule your next transformation online.
+        </h3>
+        <form>
+            <label>Name</label>
+            <input>
+            <label>Address</label>
+            <input>
+            <label>Other details</label>
+            <textarea></textarea>
+            <button>Submit</button>
+        </form>
+        <h3>OR</h3>
+        <p>
+            Chat with us on X (Twitter)
+            <a href="https://x.com/@AfolayanTe14012" target="_blank" rel="noreferrer noopener">@AfolayanTe14012</a>
+        </p>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
